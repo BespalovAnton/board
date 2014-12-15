@@ -17,7 +17,7 @@ class CreateEstates < ActiveRecord::Migration
 			t.string			:city
 			t.string			:district
 			t.string			:conract_name
-			t.integer			:contact_telefhone
+			t.integer 		:contact_telefhone
 			t.string			:conract_email
 
       t.timestamps
