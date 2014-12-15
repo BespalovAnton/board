@@ -11,10 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141215125718) do
+ActiveRecord::Schema.define(version: 20141215171028) do
 
   create_table "cities", force: true do |t|
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "estates", force: true do |t|
+    t.string   "title"
+    t.string   "status"
+    t.string   "type_estate"
+    t.decimal  "price",             precision: 10, scale: 2, default: 0.0
+    t.integer  "number_of_rooms"
+    t.integer  "total_living_area"
+    t.integer  "total_area"
+    t.integer  "floor"
+    t.integer  "number_of_floors"
+    t.string   "type_of_house"
+    t.integer  "house_area"
+    t.text     "description"
+    t.string   "region"
+    t.string   "city"
+    t.string   "district"
+    t.string   "conract_name"
+    t.integer  "contact_telefhone"
+    t.string   "conract_email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
